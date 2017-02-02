@@ -21,8 +21,10 @@
         <div class="resume-icon">_<br>Resume<br>Download</div>
       </div>
       <div class="contact">
-        <div class="coffee-icon"><%= image_tag ("icon-coffee-cup.svg")%></div>
-        <div class="coffee-detail">Let's grab a coffee.<br>cathyky.chan@gmail.com</div>
+        <%= mail_to "cathyky.chan@gmail.com" do %>
+          <div class="coffee-icon"><%= image_tag ("icon-coffee-cup.svg")%></div>
+          <div class="coffee-detail">Let's grab a coffee.<br>cathyky.chan@gmail.com</div>
+        <% end %>
       </div>
 
     </div>
