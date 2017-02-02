@@ -49,16 +49,12 @@
   fill-opacity: 1;
 }
 
-.contact-main{
-  width: 50%;
-  margin: auto;
-}
-
-.resume-icon img{
+.contact img{
   width: 50px;
   vertical-align: middle;
 }
 
+.coffee-icon,
 .resume-icon{
   font-family: 'Open Sans', sans-serif;
   vertical-align: middle;
@@ -66,4 +62,13 @@
   padding-left: 7px;
   display: inline-block;
   text-align: left;
+}
+
+.coffee-detail{
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  text-align: left;
+  padding-left: 7px;
+  color: #868d5e;
 }
