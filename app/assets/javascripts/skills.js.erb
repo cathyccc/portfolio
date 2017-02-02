@@ -1,0 +1,18 @@
+$(document).on('turbolinks:load',function(){
+  var imac = new Vivus('imac-icon',{
+    type: 'oneByOne',
+    duration: 200,
+    file: "<%= image_path ('computer-imac.svg') %>"
+  }, function(obj){
+    obj.el.classList.add('finished');
+  });
+
+  setTimeout(function(){
+    new Vivus('cup-icon',{
+      type: 'oneByOne',
+      duration: 200,
+      file: "<%= image_path ('designer-cup.svg') %>"
+    });
+}, 1800);
+
+});

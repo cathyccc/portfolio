@@ -1,0 +1,138 @@
+.black,
+.menu-black a{
+  color: black;
+}
+
+.menu-black a:before{
+  background-color: black;
+}
+
+/*.header-black{
+  background-color: rgba(25,25,25,0.85);
+}*/
+
+.projects-bg{
+  background-color: #191919;
+  width: 100%;
+}
+
+.project1-bg{
+  background-image: url('proj1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.project2-bg{
+  background: url("code_bg.png");
+  background-repeat: repeat;
+}
+
+.project-content{
+  padding: 0;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.proj-vert-cent{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.align-right{
+  text-align: right;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.project-info{
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 40px;
+  float: none;
+}
+
+.project-images{
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5%;
+  float: none;
+}
+
+.project-title{
+  margin-bottom: 0.6em;
+  font-family: 'Lora', serif;
+  font-size: 2.7em;
+  opacity: 0.8;
+}
+
+.project-info p{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+.project-selector{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 18%;
+  text-align: center;
+  /*display: flex;
+  flex-direction: row;
+  align-items: stretch;*/
+}
+
+.proj-sel-first{
+  text-align: left;
+  padding-left: 40px;
+}
+
+.proj-sel-last{
+  text-align: right;
+  padding-right: 40px;
+}
+
+.project-main-title{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 3em;
+}
+
+.project-box{
+  // width: 33%;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95em;
+}
+
+.project-box a{
+  text-decoration: none;
+  color: white;
+  padding-bottom: 4px;
+}
+
+
+.project-image{
+  width: 65%;
+}
+
+.project-image:nth-child(n+2){
+  margin-top: -33%;
+}
+
+.project-image:nth-child(even){
+  margin-left: 33%;
+}

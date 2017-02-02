@@ -1,0 +1,114 @@
+$(document).on('turbolinks:load',function(){
+  function restyleBoard(){
+    $('#projectBoard').toggleClass('align-left')
+                      .toggleClass('align-right');
+  };
+
+  function setProjLayout(){
+    var vertAlign = $('<div>').attr('id','vertCent')
+                              .addClass('proj-vert-cent');
+
+    var infoLeft = $('<div>').attr('id','projectInfo')
+                             .addClass('project-info col-sm-5 col-md-6');
+
+    var infoRight = $('<div>').attr('id','projectImagesAll')
+                              .addClass('project-images col-sm-7 col-md-6');
+
+    vertAlign.append(infoLeft);
+    vertAlign.append(infoRight);
+    $('#projectBoard').append(vertAlign);
+  };
+
+  function defaultTitleProject(){
+    $("<div>").attr("id","mainProjectTitle")
+              .addClass('project-main-title')
+              .html('Current Projects')
+              .appendTo('#projectBoard');
+  };
+
+  function projectName(name,color){
+    $('<div>').addClass('project-title')
+              .attr('id','projectTitle')
+              .css('color',color)
+              .html(name)
+              .appendTo('#projectInfo');
+  };
+
+  function projectDescription(language,text){
+    var projectInfo = $('#projectInfo');
+    var desc = $('<p>').addClass('desc')
+                       .html(text);
+    var lang = $('<p>').addClass('proj-lang')
+                       .html(language);
+    projectInfo.append(desc);
+    projectInfo.append(lang);
+    projectInfo.appendTo('#projectInfo');
+  };
+
+  function setImage1(img1){
+    var image1 = $('<img>').addClass('project-image')
+                           .attr('src', img1);
+    $('#projectImagesAll').append(image1);
+    return image1
+  };
+
+  function setImage2(img2){
+    var image2 = $('<img>').addClass('project-image')
+                           .attr('src', img2);
+    $('#projectImagesAll').append(image2);
+    return image2
+  };
+
+  function setImage3(img3){
+    var image3 = $('<img>').addClass('project-image')
+                           .attr('src', img3);
+    $('#projectImagesAll').append(image3);
+    return image3
+  };
+
+  function projectMouseover(){
+    $("#mainProjectTitle").remove();
+    restyleBoard();
+    setProjLayout();
+  };
+
+  function projectMouseout(){
+    defaultTitleProject();
+    restyleBoard();
+    $('#vertCent').remove();
+  };
+
+  // project 1: marketplace
+  $('#project1').mouseover(function(){
+    $("#projectsBody").addClass("project1-bg");
+    projectMouseover();
+    projectName('marketplace','#ff3b3f');
+    projectDescription("Ruby | Rails","An online shopping platform for users to sell and trade products.");
+    setImage3("<%= image_path ('marketplace-about.png') %>").attr('id','img01');
+    setImage2("<%= image_path ('marketplace-search.png') %>").attr('id','img02');
+    setImage1("<%= image_path ('marketplace-main.png') %>").attr('id','img03');
+  });
+
+  $('#project1').mouseout(function(){
+    $("#projectsBody").removeClass("project1-bg");
+    projectMouseout();
+  });
+
+  // project 2: shopping spree
+  $('#project2').mouseover(function(){
+    $("#projectsBody").addClass("project2-bg");
+    projectMouseover();
+    projectName('shopping spree','#f4f412');
+    projectDescription("Vanilla Javascript","Drag and drop game to achieve the highest cart value within a 20-seconds timeframe.");
+    setImage2("<%= image_path ('shopping-front.png') %>");
+    setImage1("<%= image_path ('shopping-main.png') %>");
+  });
+
+  $('#project2').mouseout(function(){
+    $("#projectsBody").removeClass("project2-bg");
+    projectMouseout();
+  });
+
+  // append Current Project on board
+  defaultTitleProject();
+});

@@ -1,0 +1,35 @@
+<body class="projects-bg container">
+  <div class="header-bar">
+    <div class="logo">
+      <%= image_tag "hand-c-icon.svg", class: "hand-logo"%>
+    </div>
+    <div class = "name">Cathy Chan</div>
+
+    <ul class="menu">
+      <li data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
+      <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
+      <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <div class="info-main contact-main">
+
+      <div class="contact">
+        <div class="resume-icon"><%= image_tag ("icon-document.svg")%></div>
+        <div class="resume-icon">_<br>Resume<br>Download</div>
+      </div>
+      <div class="contact">
+        <p class="skill-details">cathyky.chan@gmail.com</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="arrow-before">
+    <%= link_to skills_path do%>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
+</div>

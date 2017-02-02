@@ -1,0 +1,44 @@
+<body class="projects-bg">
+  <div class="header-bar">
+    <div class="logo">
+      <%= image_tag "hand-c-icon.svg", class: "hand-logo"%>
+    </div>
+    <div class = "name">Cathy Chan</div>
+
+    <ul class="menu">
+      <li data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
+      <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
+      <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <div class="info-main">
+
+      <div class="skills">
+        <div id="imac-icon" class="skill-icon"></div>
+        <div class="skill-title">development</div>
+        <p class="skill-details">Javascript | jQuery | AJAX | Ruby | Rails | HTML | CSS</p>
+      </div>
+      <div class="skills">
+        <div id="cup-icon" class="skill-icon"></div>
+        <div class="skill-title">design</div>
+        <p class="skill-details">Adobe Photoshop | Illustrator | Indesign</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="arrow-before">
+    <%= link_to experiences_path do%>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
+
+  <div class="arrow-next">
+    <%= link_to contact_path do%>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    <% end %>
+  </div>
+</div>

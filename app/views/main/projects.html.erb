@@ -1,0 +1,31 @@
+<body class="container projects-bg" id="projectsBody">
+  <div class="header-bar">
+    <div class="logo">
+      <%= image_tag "hand-c-icon.svg", class: "hand-logo"%>
+    </div>
+    <div class = "name">Cathy Chan</div>
+
+    <ul class="menu">
+      <li data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
+      <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
+      <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+    </ul>
+  </div>
+
+  <div id="projectBoard" class="project-content align-right">
+  </div>
+
+  <div class="project-selector">
+      <div class="project-box proj-sel-first col-sm-4 col-md-4">
+        <%= link_to "01 | Marketplace", nil, id: "project1" %>
+      </div>
+
+      <div class="project-box col-sm-4 col-md-4">
+        <%= link_to "02 | Shopping Spree",nil, id: "project2" %>
+      </div>
+
+      <div class="project-box proj-sel-last col-sm-4 col-md-4">
+        <%= link_to "03 | Lendr", nil, id:"project3" %>
+      </div>
+  </div>
+</body>

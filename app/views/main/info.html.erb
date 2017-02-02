@@ -1,0 +1,42 @@
+<body class="projects-bg container">
+  <div class="header-bar">
+    <div class="logo">
+      <%= image_tag "hand-c-icon.svg", class: "hand-logo"%>
+    </div>
+    <div class = "name">Cathy Chan</div>
+
+    <ul class="menu">
+      <li data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
+      <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
+      <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <div class="info-main">
+      <div class = "profile-photo">
+        <%= image_tag ("cathy.png") %>
+      </div>
+      <div class="about-dev">
+        — Front-End Developer —
+      </div>
+      <div class="about-name">
+        Cathy Chan
+      </div>
+      <div class="blurb">
+        <em>I've recently switched into development to pursue a long-standing interest in technology. I constantly aim to write code that make things look aesthetically pleasing. Coming from a background in graphic design, I create code that puts user experience first.</em>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/cathyccc"><i class="fa fa-github fa-2x social-icon" aria-hidden="true"></i></a>
+        <a href="https://ca.linkedin.com/in/cathy-chan"><i class="fa fa-linkedin fa-2x social-icon" aria-hidden="true"></i></a>
+        <a href="https://angel.co/cathyky-chan-gmail-com"><i class="fa fa-angellist fa-2x social-icon" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-next">
+    <%= link_to experiences_path do%>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    <% end %>
+  </div>
+</div>

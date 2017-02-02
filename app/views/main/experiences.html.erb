@@ -1,0 +1,49 @@
+<body class="projects-bg container">
+  <div class="header-bar">
+    <div class="logo">
+      <%= image_tag "hand-c-icon.svg", class: "hand-logo"%>
+    </div>
+    <div class = "name">Cathy Chan</div>
+
+    <ul class="menu">
+      <li data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
+      <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
+      <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <div class="info-main">
+      <h2 class="info-title">experiences</h2>
+      <div class="experience-box">
+        Hallmark Cards Inc.,
+        Digital Designer,
+        Hong Kong
+      </div>
+
+      <div class="experience-box">
+        Sunny Graphics Studio,
+        Graphic Designer,
+        Toronto
+      </div>
+
+      <div class="experience-box">
+        University of Toronto,
+        Graphic Designer,
+        Toronto
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-before">
+    <%= link_to info_path do%>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
+
+  <div class="arrow-next">
+    <%= link_to skills_path do%>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    <% end %>
+  </div>
+</div>
