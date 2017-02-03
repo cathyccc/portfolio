@@ -55,8 +55,28 @@
 }
 
 .icons{
-  color: white;
   margin-top: 37px;
+}
+
+.arrow a{
+  color: #2bbbda;
+}
+
+.blink a{
+  animation-name: blinker;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.3; }
+	100% { opacity: 1.0; }
+}
+
+.icons a{
+  color: white;
 }
 
 .social-icon{

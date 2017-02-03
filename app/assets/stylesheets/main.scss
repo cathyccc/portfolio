@@ -96,8 +96,9 @@ body{
   margin-top: 10%;
   color: white;
   opacity: 0.8;
-  margin-right: 40%;
+  margin-right: 30%;
   padding-left:30px;
+  height: 100%;
 }
 
 .main-text p{
@@ -126,13 +127,11 @@ body{
   50% { opacity:0; }
   100% { opacity:1; }
 }
-@-webkit-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+
+@media screen and (max-width: 766px) {
+  .main-text{
+    margin-right: 20%;
+    margin-top: 20%;
+  }
+
 }
