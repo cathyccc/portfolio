@@ -17,8 +17,10 @@
 
       <h2 class="info-title">let's connect</h2>
       <div class="contact">
-        <div class="resume-icon"><%= image_tag ("icon-document.svg")%></div>
-        <div class="resume-icon">_<br>Resume<br>Download</div>
+        <%= link_to "https://drive.google.com/file/d/0B5kzD5UJYKkFX216VUtXV0x1RTQ/view?usp=sharing" do %>
+          <div class="resume-icon"><%= image_tag ("icon-document.svg")%></div>
+          <div class="resume-icon">_<br>Resume<br>Download</div>
+        <% end %>
       </div>
       <div class="contact">
         <%= mail_to "cathyky.chan@gmail.com" do %>
