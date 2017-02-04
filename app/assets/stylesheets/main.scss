@@ -25,9 +25,9 @@ body{
 }
 
 .header-bar{
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-bottom: 13px;
+  padding-top: 1.4em;
+  padding-left: 1.5em;
+  padding-bottom: 1.4em;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -96,9 +96,11 @@ body{
   color: white;
   opacity: 0.8;
   margin-right: 30%;
-  padding-left:30px;
+  padding-left: 3em;
   position: relative;
-  top: 26%;
+  height: 70%;
+  top: 40%;
+  transform: translateY(-25%);
 }
 
 .main-text p{
@@ -133,5 +135,10 @@ body{
     margin-right: 20%;
     margin-top: 20%;
   }
+}
 
+@media screen and (min-width: 1920px){
+  body{
+    font-size: 23px;
+  }
 }
