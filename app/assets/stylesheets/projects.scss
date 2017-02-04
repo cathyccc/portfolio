@@ -17,7 +17,7 @@
 }
 
 .project1-bg{
-  background-image: url('proj1.jpg');
+  background-image: image-url('proj1.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -25,7 +25,7 @@
 }
 
 .project2-bg{
-  background: url("code_bg.png");
+  background: image-url("code_bg.png");
   background-repeat: repeat;
 }
 
