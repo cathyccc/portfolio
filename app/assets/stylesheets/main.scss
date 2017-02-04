@@ -93,12 +93,13 @@ body{
 
 .main-text{
   font-family: 'Open Sans', sans-serif;
-  margin-top: 10%;
   color: white;
   opacity: 0.8;
   margin-right: 30%;
   padding-left:30px;
   height: 100%;
+  position: relative;
+  top: 26%;
 }
 
 .main-text p{
