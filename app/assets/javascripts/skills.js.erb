@@ -1,8 +1,13 @@
 $(document).on('turbolinks:load',function(){
   // if running on firefox;
   if (typeof InstallTrigger !== 'undefined'){
-    $('#imac-icon').append("<% image_tag 'computer-imac.svg'%>");
-    $('#cup-icon').append("<% image_tag 'designer-cup.svg'%>");
+    var imacSource = "<%= image_path ('computer-imac.svg') %>";
+    var imacIcon = $('<img>').attr('src', imacSource);
+    $('#imac-icon').html(imacIcon);
+
+    var cupSource = "<%= image_path ('designer-cup.svg') %>";
+    var cupIcon = $('<img>').attr('src', cupSource);
+    $('#cup-icon').html(cupIcon);
   }
   // if (document.location.pathname == "/skills") {
     // var imac = new Vivus('imac-icon',{
