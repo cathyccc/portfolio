@@ -5,13 +5,19 @@
     </div>
     <div class = "name">Cathy Chan</div>
 
-    <nav class="navbar navbar-toggleable-md">
+    <!-- <nav class="navbar navbar-toggleable-md"> -->
       <ul class="menu">
-        <li class="active" data-menuanchor="page1"><%= link_to "MAIN", root_path %></li>
-        <li data-menuanchor="page2"><%= link_to "PROJECTS", projects_path %></li>
-        <li data-menuanchor="page3"><%= link_to "INFO", info_path %></li>
+        <li class="active">
+          <%= link_to "MAIN", root_path %>
+        </li>
+        <li>
+          <%= link_to "PROJECTS", projects_path %>
+        </li>
+        <li>
+          <%= link_to "INFO", info_path %>
+        </li>
       </ul>
-    </nav>
+    <!-- </nav> -->
   </div>
 
   <div class="info-box">
@@ -39,7 +45,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="arrow arrow-next blink">
     <%= link_to experiences_path do%>
