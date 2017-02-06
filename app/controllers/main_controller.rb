@@ -1,4 +1,7 @@
 class MainController < ApplicationController
-  def index
+  def main
+  end
+
+  def projects
   end
 end
