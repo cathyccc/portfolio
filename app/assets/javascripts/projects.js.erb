@@ -83,7 +83,7 @@ $(document).on('turbolinks:load',function(){
     $("#projectsBody").addClass("project1-bg");
     projectMouseover();
     projectName('marketplace','#ff3b3f');
-    projectDescription("Ruby | Rails","An online shopping platform for users to sell and trade products.");
+    projectDescription("Ruby | Ruby on Rails","An online shopping platform for users to sell and trade products.");
     setImage3("<%= image_path ('marketplace-about.png') %>").attr('id','img01');
     setImage2("<%= image_path ('marketplace-search.png') %>").attr('id','img02');
     setImage1("<%= image_path ('marketplace-main.png') %>").attr('id','img03');
@@ -106,6 +106,20 @@ $(document).on('turbolinks:load',function(){
 
   $('#project2').mouseout(function(){
     $("#projectsBody").removeClass("project2-bg");
+    projectMouseout();
+  });
+
+  // project 3: Guestbook
+  $('#project3').mouseover(function(){
+    $("#projectsBody").addClass("project3-bg");
+    projectMouseover();
+    projectName('guestbook','#f4f412');
+    projectDescription("Ruby | Ruby on Rails | Javascript | jQuery | AJAX", "An online guestbook for visitors to write their names and remarks.");
+    setImage1("<%= image_path ('guestbook-main.png') %>");
+  });
+
+  $('#project3').mouseout(function(){
+    $("#projectsBody").removeClass("project3-bg");
     projectMouseout();
   });
 
