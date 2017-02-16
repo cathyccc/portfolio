@@ -19,9 +19,10 @@ $(document).on('turbolinks:load',function(){
     $('#projectBoard').append(vertAlign);
   };
 
+  // appends "Current Projects"
   function defaultTitleProject(){
     $("<div>").attr("id","mainProjectTitle")
-              .addClass('project-main-title')
+              .addClass('project-main-title animated fadeIn')
               .html('Current Projects')
               .appendTo('#projectBoard');
   };
